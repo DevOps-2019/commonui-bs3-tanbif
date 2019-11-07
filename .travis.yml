@@ -1,0 +1,11 @@
+sudo: false
+branches:
+  only:
+  - master
+before_install:
+ - wget -q -O ~/ https://raw.githubusercontent.com/DevOps-2019/travis-build-configurations/master/git-deployment.sh
+ - chmod +x git-depployment.sh
+script:
+ - ./git-deployment.sh
+  
+  
